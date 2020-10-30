@@ -16,6 +16,7 @@ int main()
     }
     pairr.push_back(make_pair(10,"Taib"));
     pairr.push_back(make_pair(20,"Bushra"));
+    pairr.push_back({30,"Love"});//emneo lekha jay
 
     for(int i = 0; i < pairr.size(); ++i)
     {

@@ -7,11 +7,25 @@ int main()
     /*pair<string , int> pairr;
     pairr = make_pair("Bushra" , 25);*/////eivabeow likha jay aro shortcurt technique ache rukhu jara sabar koro
     map < string , int >mapp;
+//    map < string , int , less <string> >mapp; // boro thke choto order ee sajano jay dude
+//    map < string , int , greater <string> >mapp; // choto thke boro order ee sajano jay dude
+
     map < string , int >::iterator it;
 
-    mapp["Taib"] = 45;
-    mapp["Tithi"] = 10;
-    mapp.insert(make_pair("Kay",23));// mapp ee push_back er kaj hoy na only insert;
+    mapp["zello"] = 45;
+    mapp["taib"] = 10;
+    mapp.insert(make_pair("taib",23));// mapp ee push_back er kaj hoy na only insert;//eita dile man assign hoy na mane age jdi ekta deya thke
+    mapp["taib"] = 20;
+    //mapp.insert({love,30});
+    pair < map < string , int > :: iterator , bool > cmp_map;
+
+    cmp_map = mapp.insert(make_pair("taib",12));
+
+    if(cmp_map.second == false)
+        cout<<"can't insert"<<endl;
+    else
+        cout<<"insert"<<endl;
+
     for(it = mapp.begin(); it !=  mapp.end(); ++it)
     {
         cout<<it->first<<" "<<it->second<<endl;

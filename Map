@@ -16,6 +16,7 @@ int main()
     mapp["taib"] = 10;
     mapp.insert(make_pair("taib",23));// mapp ee push_back er kaj hoy na only insert;//eita dile man assign hoy na mane age jdi ekta deya thke
     mapp["taib"] = 20;
+    //mapp.insert({"Taib",20});// make_pair na diya second braket diya kra jay bro;;
 
     pair < map < string , int > :: iterator , bool > cmp_map;
 

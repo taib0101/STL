@@ -18,7 +18,7 @@ int main()
     pairr.push_back(make_pair(20,"Bushra"));
     pairr.push_back({30,"Love"});//emneo lekha jay
    // pairrr = make_pair(30,"Love")//single pair er jnno not vector diya tar jonno (pair <int , string> pairr) likhlei jothesto
-
+   // pairrr = {30,"Love"};// make_pair na diya second braket deya jay;
     for(int i = 0; i < pairr.size(); ++i)
     {
         cout<<pairr[i].first<<" "<<pairr[i].second<<endl;

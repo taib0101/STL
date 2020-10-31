@@ -16,7 +16,7 @@ int main()
     mapp["taib"] = 10;
     mapp.insert(make_pair("taib",23));// mapp ee push_back er kaj hoy na only insert;//eita dile man assign hoy na mane age jdi ekta deya thke
     mapp["taib"] = 20;
-    //mapp.insert({love,30});
+
     pair < map < string , int > :: iterator , bool > cmp_map;
 
     cmp_map = mapp.insert(make_pair("taib",12));
@@ -30,6 +30,17 @@ int main()
     {
         cout<<it->first<<" "<<it->second<<endl;
     }
+    string x;
+    cin>>x;
+    for(it = mapp.find(x); it != mapp.end(); ++it)
+    {
+        if(it -> first == x)
+        {
+            cout<<"found\n";
+            break;
+        }
+    }
+//    for(auto &it : mapp)
+//        cout<<it.first<<" "<<it.second<<endl; // without iterator ee emne kra jay
     return 0;
 }
-

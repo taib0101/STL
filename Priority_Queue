@@ -1,0 +1,33 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+    {
+        priority_queue < int > priq;
+        priq.push(10);
+        priq.push(100);
+        priq.push(200);
+        priq.push(150);
+        priq.push(12);
+        while(!priq.empty())
+        {
+            cout << priq.top() << endl;
+            priq.pop();
+        }
+        return 0;
+   }
+   // lexicography er ulta kaj kre
+//    int main()
+//    {
+//        priority_queue < string > priq;
+//        priq.push("A");
+//        priq.push("B");
+//        priq.push("C");
+//        priq.push("D");
+//        priq.push("E");
+//        while(!priq.empty())
+//        {
+//            cout << priq.top() << endl;
+//            priq.pop();
+//        }
+//        return 0;
+//    }

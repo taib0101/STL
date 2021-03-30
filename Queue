@@ -7,13 +7,13 @@ int main()
     que.push(1);
     que.push(2);
     que.push(3);
-    cout << que.front() << endl;
-    cout << que.rear() << endl;
-    
+    cout << "front = " << que.front() << endl;
+    // que.rear() fucked up;
+    cout << "size = " << que.size() << endl;
     while(!que.empty())
     {
         cout << que.front() << endl;
-        qe.pop();
+        que.pop();
     }
     return 0;
 }

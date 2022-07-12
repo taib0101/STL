@@ -7,7 +7,8 @@ int main()
     st.push(5);
     st.push(4);
     st.push(10);
-
+    st.push(434);//added by sadman
+    st.push(100);//added by sadman
     cout << "size = " << st.size() << endl;
     while(!st.empty())
     {
